@@ -1,0 +1,76 @@
+1617891769778	geckodriver	INFO	Listening on 127.0.0.1:55615
+1617891770770	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile99MA5m"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617891777614	Marionette	INFO	Listening on port 39905
+1617891779196	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1526 > injectedScript, line 5392: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1526 > injectedScript, line 5392: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1526 > injectedScript, line 5392: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1526 > injectedScript, line 5392: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1526 > injectedScript, line 5392: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1526 > injectedScript, line 5392: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1526 > injectedScript, line 5392: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1526 > injectedScript, line 5392: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1617891800657	Marionette	INFO	Stopped listening on port 39905
+1618866546221	geckodriver	INFO	Listening on 127.0.0.1:39719
+1618866546306	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileirw9nP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618866551800	Marionette	INFO	Listening on port 36689
+1618866551873	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618866558842	Marionette	INFO	Stopped listening on port 36689
+1618866574006	geckodriver	INFO	Listening on 127.0.0.1:33133
+1618866574014	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyv9PGi"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618866577854	Marionette	INFO	Listening on port 44147
+1618866577983	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618866584878	Marionette	INFO	Stopped listening on port 44147
+1618866600247	geckodriver	INFO	Listening on 127.0.0.1:60301
+1618866600256	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0ppKl3"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618866603945	Marionette	INFO	Listening on port 34651
+1618866604008	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1618866694514	Marionette	INFO	Stopped listening on port 34651
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618930877980	geckodriver	INFO	Listening on 127.0.0.1:42203
+1618930878062	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile42hSDb"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618930882071	Marionette	INFO	Listening on port 45089
+1618930882113	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1443 > injectedScript, line 5368: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1618930976644	geckodriver	INFO	Listening on 127.0.0.1:48605
+1618930976652	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevYOroP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618930981375	Marionette	INFO	Listening on port 38653
+1618930981508	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1368 > injectedScript, line 5135: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1368 > injectedScript, line 5135: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1368 > injectedScript, line 5135: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1368 > injectedScript, line 5135: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1368 > injectedScript, line 5135: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1368 > injectedScript, line 5135: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1368 > injectedScript, line 5135: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1 line 1368 > injectedScript, line 5135: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1618931004075	Marionette	INFO	Stopped listening on port 38653
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.

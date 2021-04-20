@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 #  ____________________________ #
 # TODO: изменить способ поиска телефонов (без re) использовав только внутренние возможности selenium или bs4
 # TODO: добавить проверку через статус ответа сервера
-
+# TODO: исправить некоррекную работу мыши при других запросах
 
 def get_phone(main_page):
     soup = BeautifulSoup(main_page, 'lxml')
@@ -31,9 +31,7 @@ def get_phone(main_page):
 def main():
     driver = webdriver.Firefox()
 
-    driver.get(
-        'https://www.google.ru/maps/search/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7'
-        '%D0%B8%D0%BD%D1%8B/@56.864356,53.0880159,11z/data=!3m1!4b1')
+    driver.get('https://www.google.ru/maps/search/%D1%81%D1%83%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%8B+/@55,103,3z/data=!3m1!4b1')
     time.sleep(10)
     while True:
         # print(pyautogui.position())

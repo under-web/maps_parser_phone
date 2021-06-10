@@ -1,5 +1,3 @@
-import requests
-from bs4 import BeautifulSoup
 import time
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -66,34 +64,55 @@ def run_browser(town, categories):
             button_next = browser.find_element_by_xpath('//*[@id="ppdPk-Ej1Yeb-LgbsSe-tJiF1e"]')
             button_next.click()
             time.sleep(3)
-            if type(button_next) == 'ElementClickInterceptedException':
-                print('Страниц больше нет')
-                break
         except Exception as e:
             print('3', e)
+            browser.close()
+            browser.quit()
             return list_urls
-    return list_urls
-
+        browser.close()
+        browser.quit()
+        return list_urls
+# TODO: искать все взначения по xpath и уже их парсить варианты с get запросами и альтернативы в ютубе
 
 def get_html_site(list_urls):
-    headers = {
-        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) '
-                      'Chrome/53.0.2785.143 Safari/537.36 '
-    }
     for row_url in list_urls:
-        try:
-            print(row_url)
-            r = requests.get(row_url, headers=headers)
-            if r.status_code == 200:
-                soup = BeautifulSoup(r.text, 'lxml')
-                site = soup.find('div', class_='QSFF4-text.gm2-body-2')
-                print(site)
-            elif r.status_code != 200:
-                continue
-        except Exception as e:
-            print('111', e)
+        if 'http' in row_url:
+            try:
+                driver = webdriver.Firefox()
+                driver.maximize_window()  # For maximizing window
+                driver.implicitly_wait(10)
+                driver.get(row_url)
+                time.sleep(3)
+            except Exception as e:
+                print('get_html_site', e)
+                driver.close()
+                driver.quit()
+            try:
+                name_org = driver.find_element_by_xpath(
+                    '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/h1/span[1]').get_attribute("innerHTML")
+            except Exception:
+                name_org = 'organization'
+            try:
+                adress = driver.find_element_by_class_name(
+                    'rogA2c').text
+            except Exception:
+                adress = 'adress'
+            try:
+                site = driver.find_element_by_css_selector(
+                    'div.RcCsl:nth-child(5) > button:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)').text
+            except Exception:
+                site = 'site'
+            try:
+                phone = driver.find_elements_by_class_name(
+                    'QSFF4-text gm2-body-2')
+            except Exception:
+                phone = 'phone'
+            for i in phone:
+                print(i.text)
+            print(name_org, site, adress)
+            driver.quit()
+        else:
             continue
-
 
 def main():
     try:
@@ -102,7 +121,7 @@ def main():
     except KeyboardInterrupt:
         browser.quit()
     except Exception as e:
-        print('000', e)
+        print('main', e)
 
 
 if __name__ == '__main__':

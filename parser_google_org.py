@@ -1,4 +1,5 @@
 import time
+import re
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
@@ -72,7 +73,11 @@ def run_browser(town, categories):
         browser.close()
         browser.quit()
         return list_urls
-# TODO: искать все взначения по xpath и уже их парсить варианты с get запросами и альтернативы в ютубе
+
+def save_writer(all_data):
+    with open('output.txt', 'a', encoding='utf-8', errors='ignore') as file:
+        file.write(all_data + '\n')
+
 
 def get_html_site(list_urls):
     for row_url in list_urls:
@@ -88,31 +93,32 @@ def get_html_site(list_urls):
                 driver.close()
                 driver.quit()
             try:
+                all_data = driver.find_element_by_xpath('/html/body/jsl/div[3]/div[9]/div[8]/div')
+            except Exception:
+                all_data = 'organization'
+            try:
                 name_org = driver.find_element_by_xpath(
-                    '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/h1/span[1]').get_attribute("innerHTML")
+                    '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/h1/span[1]')
             except Exception:
-                name_org = 'organization'
-            try:
-                adress = driver.find_element_by_class_name(
-                    'rogA2c').text
-            except Exception:
-                adress = 'adress'
-            try:
-                site = driver.find_element_by_css_selector(
-                    'div.RcCsl:nth-child(5) > button:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)').text
-            except Exception:
-                site = 'site'
-            try:
-                phone = driver.find_elements_by_class_name(
-                    'QSFF4-text gm2-body-2')
-            except Exception:
-                phone = 'phone'
-            for i in phone:
-                print(i.text)
-            print(name_org, site, adress)
+                name_org = 'name org'
+            # try:
+            #     site = driver.find_element_by_css_selector(
+            #         'div.RcCsl:nth-child(5) > button:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)').text
+            # except Exception:
+            #     site = 'site'
+            # try:
+            #     name_org = driver.find_element_by_xpath('/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[9]')
+            #     row_tag = str(name_org.get_attribute('innerHTML'))
+            #     telephone = re.findall(r"\d\(\d{3}\)\d{3}.\d{2}.\d{2}", row_tag)
+            # except Exception:
+            #     telephone = 'phone'
+
+            print(all_data.text)
+            save_writer(all_data.text)
             driver.quit()
         else:
             continue
+
 
 def main():
     try:

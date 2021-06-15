@@ -1,5 +1,4 @@
 import time
-import re
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
@@ -38,7 +37,7 @@ def run_browser(town, categories):
     opts = Options()
     opts.headless = True
     assert opts.headless
-    browser = webdriver.Firefox()
+    browser = webdriver.Firefox(options=opts)
 
     base_url = 'https://www.google.com/maps/search/' + town + '+' + categories + '/@55.802957,49.0908432,13z/data=!3m1!4b1?hl=ru-RU'
     browser.get(base_url)
@@ -57,7 +56,7 @@ def run_browser(town, categories):
             elems = browser.find_elements_by_xpath("//a[@href]")
             for elem in elems:
                 list_urls.append(elem.get_attribute("href"))
-                print(len(list_urls))
+                print(f'Найдено организаций {len(list_urls)} ')
         except Exception as e:
             print('2', e)
         time.sleep(3)
@@ -70,57 +69,51 @@ def run_browser(town, categories):
             browser.close()
             browser.quit()
             return list_urls
-        browser.close()
+        # browser.close()
         browser.quit()
         return list_urls
 
-def save_writer(all_data):
-    with open('output.txt', 'a', encoding='utf-8', errors='ignore') as file:
-        file.write(all_data + '\n')
+
+def save_writer(nam):
+    name_file = get_town_in_file() + '.txt'
+    with open(f'{name_file}', 'a', encoding='utf-8', errors='ignore') as file:
+        file.write(nam + '\n\n' + '-----------------------------------------------------------' + '\n\n')
 
 
 def get_html_site(list_urls):
     for row_url in list_urls:
         if 'http' in row_url:
             try:
-                driver = webdriver.Firefox()
-                driver.maximize_window()  # For maximizing window
-                driver.implicitly_wait(10)
+                opts = Options()
+                opts.headless = True
+                assert opts.headless
+                driver = webdriver.Firefox(options=opts)
                 driver.get(row_url)
-                time.sleep(3)
+                time.sleep(7)
             except Exception as e:
-                print('get_html_site', e)
-                driver.close()
+                print(e)
+                continue
+            try:
+                nam = driver.find_element_by_xpath('/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[9]')
+                # adress = driver.find_element_by_xpath(
+                #     '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/h1/span[1]')
+                print('------------------------------------------------')
+                print(nam.text)
+                print('------------------------------------------------')
+                print('')
+                save_writer(nam.text)
                 driver.quit()
-            try:
-                all_data = driver.find_element_by_xpath('/html/body/jsl/div[3]/div[9]/div[8]/div')
-            except Exception:
-                all_data = 'organization'
-            try:
-                name_org = driver.find_element_by_xpath(
-                    '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/h1/span[1]')
-            except Exception:
-                name_org = 'name org'
-            # try:
-            #     site = driver.find_element_by_css_selector(
-            #         'div.RcCsl:nth-child(5) > button:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)').text
-            # except Exception:
-            #     site = 'site'
-            # try:
-            #     name_org = driver.find_element_by_xpath('/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[9]')
-            #     row_tag = str(name_org.get_attribute('innerHTML'))
-            #     telephone = re.findall(r"\d\(\d{3}\)\d{3}.\d{2}.\d{2}", row_tag)
-            # except Exception:
-            #     telephone = 'phone'
-
-            print(all_data.text)
-            save_writer(all_data.text)
-            driver.quit()
+            except Exception as e:
+                print('nam', e)
+                driver.quit()
+                continue
         else:
             continue
 
 
 def main():
+    print('Это бета-версия 1.0')
+    print('Я работаю')
     try:
         get_html_site(run_browser(get_town_in_file(), get_categories_in_file()))
 

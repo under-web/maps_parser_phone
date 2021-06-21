@@ -76,18 +76,15 @@ def run_browser(town, categories):
         return list_urls
 
 
-def save_in_csv(out_data):
-    with open("classmates.csv", mode="a", encoding='utf-8') as csv_file:
+def save_in_csv(town, out_data):
+    """
+    Функция для записи списка в файл CSV
+    :param out_data: принимает список имя организации, телефон, сайт
+    :return:
+    """
+    with open(f"{town}.csv", mode="a", encoding='utf-8') as csv_file:
         file_writer = csv.writer(csv_file, delimiter=";")
         file_writer.writerow(out_data)
-
-
-#
-# def save_writer(nam):
-#     name_file = get_town_in_file() + '.txt'
-#     with open(f'{name_file}', 'a', encoding='utf-8', errors='ignore') as file:
-#         file.write(nam + '\n\n' + '-----------------------------------------------------------' + '\n\n')
-
 
 def get_html_site(list_urls):
     for row_url in list_urls:
@@ -105,7 +102,7 @@ def get_html_site(list_urls):
                 continue
             try:
                 main_info = driver.find_element_by_xpath(
-                    '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[9]').text
+                    '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[9]').text  # ищем элементы на страницы
 
                 main_info_dubler = driver.find_element_by_xpath(
                     '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[7]').text
@@ -114,28 +111,37 @@ def get_html_site(list_urls):
 
                 row_phone = re.findall(r"(\+7|8).*?(\d{3}).*?(\d{3}).*?(\d{2}).*?(\d{2})", main_info)
                 row_phone2 = re.findall(r"(\+7|8).*?(\d{3}).*?(\d{3}).*?(\d{2}).*?(\d{2})", main_info_dubler)
-                site = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info)
-                site2 = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info_dubler)
-                #
-                # phone = str(''.join(row_phone)) + str(''.join(row_phone2))
-                # url0 = str(''.join(site)) + str(''.join(site2))
+                row_phone = re.findall(r'[0-9]\s\(\d{0,4}\)\s\d{0,4}\-\d{0,3}\-\d{0,3}', main_info)
+                any_row_phone = re.findall(r'\+\d+.+', main_info)
+                if row_phone:
+                    phone = ''.join(list(row_phone[0]))  # блок для поиска телефона
+                elif row_phone:
+                    phone = ''.join(list(row_phone2[0]))
+                else:
+                    phone = ''.join(any_row_phone)
+                    if not phone:
+                        phone = 'Не указан тел.'
 
-                # if not phone:
-                #     phone = 'Телефон Не указан'
-                # elif not url0:
-                #     url0 = 'Сайт не указан'
+                row_site = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info)
+                row_site2 = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info_dubler)
+                if row_site:
+                    site = ''.join(row_site)  # блок для поиска сайта
+                elif not row_site:
+                    site = ''.join(row_site2)
+                else:
+                    site = 'Не указан сайт'
 
-                print('------------------------------------------------')
+                print('------------------------------------------------')  # дебаг инфо
                 print(f'Название " {name_org} "' + '\n')
                 print(main_info)
                 print(main_info_dubler)
-                print('tel', row_phone)
+                print('tel', phone)
                 print('site  ', site)
                 print('------------------------------------------------')
                 print('')
 
-                out_list = [name_org, row_phone, site]
-                save_in_csv(out_list)
+                out_list = [name_org, phone, site]
+                save_in_csv(get_town_in_file(), out_list)  # формируем список и передаем в ф-цию записи CSV
 
                 driver.quit()
 
@@ -149,7 +155,7 @@ def get_html_site(list_urls):
 
 
 def main():
-    print('Это бета-версия 1.1')
+    print('Это бета-версия 2.1.c.r')
     print('Я работаю')
     try:
         get_html_site(run_browser(get_town_in_file(), get_categories_in_file()))
@@ -162,4 +168,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-# <h1 jstcache="127" class="x3AX1-LfntMc-header-title-title gm2-headline-5" jsan="7.x3AX1-LfntMc-header-title-title,7.gm2-headline-5"> <span jstcache="128">Лавка странника</span> <span jstcache="129" class="x3AX1-LfntMc-header-title-haAclf"></span> </h1>

@@ -20552,3 +20552,511 @@ JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.E5W41EH7-Mo.201
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileMXFzxY\\search.json.mozlz4", (void 0)))
 1624631605637	Marionette	INFO	Listening on port 53090
 1624631605773	Marionette	WARN	TLS certificate errors will be ignored for this session
+1624646708206	geckodriver	INFO	Listening on 127.0.0.1:56903
+1624646711272	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileTIJHBJ"
+*** You are running in headless mode.
+1624646713617	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileTIJHBJ\\search.json.mozlz4", (void 0)))
+1624646720531	Marionette	INFO	Listening on port 56911
+1624646721632	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624646761142	Marionette	INFO	Stopped listening on port 56911
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1624646763922	geckodriver	INFO	Listening on 127.0.0.1:57155
+1624646766941	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileY2UPZL"
+*** You are running in headless mode.
+1624646767937	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileY2UPZL\\search.json.mozlz4", (void 0)))
+1624646773494	Marionette	INFO	Listening on port 57163
+1624646774323	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624646815852	Marionette	INFO	Stopped listening on port 57163
+1624646818310	geckodriver	INFO	Listening on 127.0.0.1:57449
+1624646821342	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofile6y0aCu"
+*** You are running in headless mode.
+1624646822581	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofile6y0aCu\\search.json.mozlz4", (void 0)))
+1624646826866	Marionette	INFO	Listening on port 57457
+1624646827658	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624646846401	Marionette	INFO	Stopped listening on port 57457
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390141,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/CrashMonitor.jsm, line 201: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1624646849720	geckodriver	INFO	Listening on 127.0.0.1:57635
+1624646853341	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileZk1kLJ"
+*** You are running in headless mode.
+1624646854587	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileZk1kLJ\\search.json.mozlz4", (void 0)))
+1624646859984	Marionette	INFO	Listening on port 57643
+1624646860112	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624646882231	Marionette	INFO	Stopped listening on port 57643
+1624646884824	geckodriver	INFO	Listening on 127.0.0.1:57875
+1624646887839	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilegkumix"
+*** You are running in headless mode.
+1624646888839	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilegkumix\\search.json.mozlz4", (void 0)))
+1624646893294	Marionette	INFO	Listening on port 57883
+1624646894820	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4I/rt=j/d=1/rs=ACT90oFGc8xOQtdDyRnKfxKJHikiVs0rFg, line 3961: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4I/rt=j/d=1/rs=ACT90oFGc8xOQtdDyRnKfxKJHikiVs0rFg, line 3961: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4I/rt=j/d=1/rs=ACT90oFGc8xOQtdDyRnKfxKJHikiVs0rFg, line 3961: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4I/rt=j/d=1/rs=ACT90oFGc8xOQtdDyRnKfxKJHikiVs0rFg, line 3961: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624646912557	Marionette	INFO	Stopped listening on port 57883
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1624646915363	geckodriver	INFO	Listening on 127.0.0.1:58055
+1624646918379	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileNxSWYF"
+*** You are running in headless mode.
+1624646919485	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileNxSWYF\\search.json.mozlz4", (void 0)))
+1624646926070	Marionette	INFO	Listening on port 58063
+1624646926243	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1624647007924	geckodriver	INFO	Listening on 127.0.0.1:58122
+1624647010946	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilemHTl1R"
+*** You are running in headless mode.
+1624647012002	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilemHTl1R\\search.json.mozlz4", (void 0)))
+1624647016468	Marionette	INFO	Listening on port 58130
+1624647017277	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647053224	Marionette	INFO	Stopped listening on port 58130
+1624647055439	geckodriver	INFO	Listening on 127.0.0.1:58377
+1624647058439	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileyfBvGV"
+*** You are running in headless mode.
+1624647059430	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileyfBvGV\\search.json.mozlz4", (void 0)))
+1624647063844	Marionette	INFO	Listening on port 58385
+1624647064699	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647087426	Marionette	INFO	Stopped listening on port 58385
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1624647089929	geckodriver	INFO	Listening on 127.0.0.1:58688
+1624647092944	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileL0cKHE"
+*** You are running in headless mode.
+1624647093949	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileL0cKHE\\search.json.mozlz4", (void 0)))
+1624647098187	Marionette	INFO	Listening on port 58696
+1624647099199	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4I/rt=j/d=1/rs=ACT90oFGc8xOQtdDyRnKfxKJHikiVs0rFg, line 3961: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4I/rt=j/d=1/rs=ACT90oFGc8xOQtdDyRnKfxKJHikiVs0rFg, line 3961: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4I/rt=j/d=1/rs=ACT90oFGc8xOQtdDyRnKfxKJHikiVs0rFg, line 3961: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4I/rt=j/d=1/rs=ACT90oFGc8xOQtdDyRnKfxKJHikiVs0rFg, line 3961: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647237676	geckodriver	INFO	Listening on 127.0.0.1:59000
+1624647240678	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofile4o4WV9"
+*** You are running in headless mode.
+1624647242273	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofile4o4WV9\\search.json.mozlz4", (void 0)))
+1624647247565	Marionette	INFO	Listening on port 59008
+1624647248660	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647307838	Marionette	INFO	Stopped listening on port 59008
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624647309663	geckodriver	INFO	Listening on 127.0.0.1:59226
+1624647312679	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofile1RG88Q"
+*** You are running in headless mode.
+1624647313660	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofile1RG88Q\\search.json.mozlz4", (void 0)))
+1624647318098	Marionette	INFO	Listening on port 59234
+1624647318966	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647347678	Marionette	INFO	Stopped listening on port 59234
+1624647349700	geckodriver	INFO	Listening on 127.0.0.1:59531
+1624647352713	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilemTJu5O"
+*** You are running in headless mode.
+1624647353724	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilemTJu5O\\search.json.mozlz4", (void 0)))
+1624647357738	Marionette	INFO	Listening on port 59539
+1624647358447	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647391611	Marionette	INFO	Stopped listening on port 59539
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1624647393440	geckodriver	INFO	Listening on 127.0.0.1:59818
+1624647396440	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilewnohuG"
+*** You are running in headless mode.
+1624647397730	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilewnohuG\\search.json.mozlz4", (void 0)))
+1624647402007	Marionette	INFO	Listening on port 59826
+1624647403029	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647428066	Marionette	INFO	Stopped listening on port 59826
+JavaScript error: /maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/ck=maps.m.dS-mNxAy2R8.L.F4.O/m=vwr,vd,a,owc,ob,sp,en,smi,sc,vlg,smr,as,wrc/am=N4A/rt=j/d=1/rs=ACT90oGH2zaUBRTmBYH5sKs8XM3FFl15xg/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b, line 3416: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: /maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/ck=maps.m.dS-mNxAy2R8.L.F4.O/m=vwr,vd,a,owc,ob,sp,en,smi,sc,vlg,smr,as,wrc/am=N4A/rt=j/d=1/rs=ACT90oGH2zaUBRTmBYH5sKs8XM3FFl15xg/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b, line 3416: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: /maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/ck=maps.m.dS-mNxAy2R8.L.F4.O/m=vwr,vd,a,owc,ob,sp,en,smi,sc,vlg,smr,as,wrc/am=N4A/rt=j/d=1/rs=ACT90oGH2zaUBRTmBYH5sKs8XM3FFl15xg/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b, line 3416: NS_ERROR_NOT_INITIALIZED: 
+1624647430101	geckodriver	INFO	Listening on 127.0.0.1:60041
+1624647433133	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileksF1rZ"
+*** You are running in headless mode.
+1624647434167	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileksF1rZ\\search.json.mozlz4", (void 0)))
+1624647440046	Marionette	INFO	Listening on port 60049
+1624647440552	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647463365	Marionette	INFO	Stopped listening on port 60049
+1624647465303	geckodriver	INFO	Listening on 127.0.0.1:60279
+1624647468318	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileCfey92"
+*** You are running in headless mode.
+1624647469284	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileCfey92\\search.json.mozlz4", (void 0)))
+1624647473525	Marionette	INFO	Listening on port 60287
+1624647474554	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647549495	Marionette	INFO	Stopped listening on port 60287
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1624647551086	geckodriver	INFO	Listening on 127.0.0.1:60743
+1624647554133	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileir6Xcw"
+*** You are running in headless mode.
+1624647556016	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileir6Xcw\\search.json.mozlz4", (void 0)))
+1624647561403	Marionette	INFO	Listening on port 60751
+1624647563112	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL is currently disabled.
+1624647584963	Marionette	INFO	Stopped listening on port 60751
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624647587642	geckodriver	INFO	Listening on 127.0.0.1:60906
+1624647590648	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilepCdtyt"
+*** You are running in headless mode.
+1624647591676	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilepCdtyt\\search.json.mozlz4", (void 0)))
+1624647596697	Marionette	INFO	Listening on port 60914
+1624647597538	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647623453	geckodriver	INFO	Listening on 127.0.0.1:61075
+1624647626494	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileztUZdW"
+*** You are running in headless mode.
+1624647627598	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileztUZdW\\search.json.mozlz4", (void 0)))
+1624647632381	Marionette	INFO	Listening on port 61083
+1624647633562	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647773837	Marionette	INFO	Stopped listening on port 61083
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1624647775427	geckodriver	INFO	Listening on 127.0.0.1:61437
+1624647778443	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileb3CJtL"
+*** You are running in headless mode.
+1624647779546	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileb3CJtL\\search.json.mozlz4", (void 0)))
+1624647783738	Marionette	INFO	Listening on port 61445
+1624647784717	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647842524	Marionette	INFO	Stopped listening on port 61445
+[Parent 8992, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1624647845272	geckodriver	INFO	Listening on 127.0.0.1:61685
+1624647848272	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileFPQA0S"
+*** You are running in headless mode.
+1624647850269	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileFPQA0S\\search.json.mozlz4", (void 0)))
+1624647854759	Marionette	INFO	Listening on port 61693
+1624647855676	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647881359	Marionette	INFO	Stopped listening on port 61693
+1624647883222	geckodriver	INFO	Listening on 127.0.0.1:61913
+1624647886222	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilevpP2IR"
+*** You are running in headless mode.
+1624647887437	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilevpP2IR\\search.json.mozlz4", (void 0)))
+1624647892317	Marionette	INFO	Listening on port 61921
+1624647892369	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647919095	Marionette	INFO	Stopped listening on port 61921
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+[Child 8148, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+[Child 8148, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+1624647921992	geckodriver	INFO	Listening on 127.0.0.1:62176
+1624647925052	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileJFsRLx"
+*** You are running in headless mode.
+1624647926227	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileJFsRLx\\search.json.mozlz4", (void 0)))
+1624647931086	Marionette	INFO	Listening on port 62184
+1624647932368	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624647954020	Marionette	INFO	Stopped listening on port 62184
+1624647956011	geckodriver	INFO	Listening on 127.0.0.1:62386
+1624647959011	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilegzQxnJ"
+*** You are running in headless mode.
+1624647960137	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofilegzQxnJ\\search.json.mozlz4", (void 0)))
+1624647964484	Marionette	INFO	Listening on port 62394
+1624647965245	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624648023872	Marionette	INFO	Stopped listening on port 62394
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1624648026280	geckodriver	INFO	Listening on 127.0.0.1:62751
+1624648029296	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofile38j6z0"
+*** You are running in headless mode.
+1624648030300	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofile38j6z0\\search.json.mozlz4", (void 0)))
+1624648034427	Marionette	INFO	Listening on port 62759
+1624648035522	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624648056894	Marionette	INFO	Stopped listening on port 62759
+JavaScript error: /maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/ck=maps.m.dS-mNxAy2R8.L.F4.O/m=vwr,vd,a,owc,ob,sp,en,smi,sc,vlg,smr,as,wrc/am=N4A/rt=j/d=1/rs=ACT90oGH2zaUBRTmBYH5sKs8XM3FFl15xg/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b, line 3416: NS_ERROR_NOT_INITIALIZED: 
+1624648058870	geckodriver	INFO	Listening on 127.0.0.1:62987
+1624648061917	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofile7h7y0F"
+*** You are running in headless mode.
+1624648062945	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofile7h7y0F\\search.json.mozlz4", (void 0)))
+1624648066893	Marionette	INFO	Listening on port 62995
+1624648067639	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.ru.ysJPwLgZi8k.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,ppl,log,std,b/am=N4A/rt=j/d=1/rs=ACT90oH_oc-A4zg3ZoWzg40YaxcIXimWjQ, line 3959: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624648089078	Marionette	INFO	Stopped listening on port 62995
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1624648091059	geckodriver	INFO	Listening on 127.0.0.1:63187
+1624648094059	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Seneka\\AppData\\Local\\Temp\\rust_mozprofileFxVh6U"
+*** You are running in headless mode.

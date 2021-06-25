@@ -87,6 +87,8 @@ def save_in_csv(town, out_data):
         file_writer.writerow(out_data)
 
 def get_html_site(list_urls):
+    # TODO: добавить описание
+    global phone
     for row_url in list_urls:
         if 'http' in row_url:
             try:
@@ -109,27 +111,34 @@ def get_html_site(list_urls):
                 name_org = driver.find_element_by_xpath(
                     '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/h1/span[1]').text
 
-                row_phone = re.findall(r"(\+7|8).*?(\d{3}).*?(\d{3}).*?(\d{2}).*?(\d{2})", main_info)
-                row_phone2 = re.findall(r"(\+7|8).*?(\d{3}).*?(\d{3}).*?(\d{2}).*?(\d{2})", main_info_dubler)
+
                 row_phone = re.findall(r'[0-9]\s\(\d{0,4}\)\s\d{0,4}\-\d{0,3}\-\d{0,3}', main_info)
-                any_row_phone = re.findall(r'\+\d+.+', main_info)
-                if row_phone:
-                    phone = ''.join(list(row_phone[0]))  # блок для поиска телефона
-                elif row_phone:
-                    phone = ''.join(list(row_phone2[0]))
-                else:
-                    phone = ''.join(any_row_phone)
-                    if not phone:
-                        phone = 'Не указан тел.'
+                row_phone2 = re.findall(r'(\+7|8).*?(\d{3}).*?(\d{3}).*?(\d{2}).*?(\d{2})', main_info_dubler)
+
+
+                print('+++++++++++++++++++++++++')
+                print('-|-', main_info, '-||-', main_info_dubler, '-|||-')
+                print(f'row_phone {row_phone}', f'row_phone2 {row_phone2}')
+                print('++++++++++++++++++++++++++')
+
+                try:
+                    if row_phone != []:
+                        phone = ''.join(list(row_phone[0]))
+                    elif row_phone2 != []:
+                        phone = ''.join(list(row_phone2[0]))
+                except Exception as e:
+                    # phone = ''.join(list(row_phone2[0])[0])
+                    phone = 'Не указан тел'
 
                 row_site = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info)
                 row_site2 = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info_dubler)
-                if row_site:
+                # TODO: вывести отображение отсутствия сайта корректно
+                try:
                     site = ''.join(row_site)  # блок для поиска сайта
-                elif not row_site:
+                except Exception as e:
                     site = ''.join(row_site2)
-                else:
-                    site = 'Не указан сайт'
+                    if site is None or site == '':
+                        site = 'Не указан сайт'
 
                 print('------------------------------------------------')  # дебаг инфо
                 print(f'Название " {name_org} "' + '\n')

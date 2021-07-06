@@ -84,9 +84,9 @@ def run_browser(town, categories):
                 browser.close()
                 browser.quit()
                 return list_urls
-        browser.close()
-        browser.quit()
-        return list_urls
+        # browser.close()
+        # browser.quit()  # для дебага
+        # return list_urls
 
 
 def save_in_csv(town, out_data):

@@ -7,6 +7,7 @@ from selenium.webdriver.common.keys import Keys
 
 list_urls = []
 
+
 def get_town_in_file():
     """
      Функция для извлечения города из файла
@@ -43,7 +44,7 @@ def run_browser(town, categories):
 
     print('Подгружаю...')
 
-    base_url = 'https://www.google.com/maps/search/' + town + '+' + categories + '/@55.802957,49.0908432,13z/data=!3m1!4b1?hl=ru-RU'
+    base_url = 'https://www.google.com/maps/search/' + town + '+' + categories
     browser.get(base_url)
     time.sleep(7)
 
@@ -98,6 +99,7 @@ def save_in_csv(town, out_data):
         file_writer = csv.writer(csv_file, delimiter=";")
         file_writer.writerow(out_data)
 
+
 def get_html_site(list_urls):
     """
     Принимает список со всеми url, проходит по каждому адресу ищет данные и передает их в функцию записи
@@ -105,6 +107,7 @@ def get_html_site(list_urls):
     :return:
     """
 
+    global phone
     for row_url in list_urls:
         if 'http' in row_url:
             try:
@@ -132,45 +135,46 @@ def get_html_site(list_urls):
                 name_org = driver.find_element_by_xpath(
                     '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/h1/span[1]').text
 
-                # TODO: не отображается потому что если номер main_info но regex не подходит он идет дальше, а твм []
-                # row_phone = re.findall(r'[0-9]\s\(\d{0,4}\)\s\d{0,4}\-\d{0,3}\-\d{0,3}', main_info)
-                amer_rus_regex = re.compile(r'\+\d.+|8.+')
-                # only_rus_regex = re.compile(r'(\+7|8).*?(\d{3}).*?(\d{3}).*?(\d{2}).*?(\d{2})')
-                only_rus_regex = re.compile(r'\+\d.+|8.+')
-                any_regex = re.compile(r'\+\d.+|8.+')
+                regex = re.compile(r'\s\+\d.+|\s8.+')
 
-                row_phone = re.findall(amer_rus_regex, main_info)
-                row_phone2 = re.findall(only_rus_regex, main_info_dubler)
-                row_phone3 = re.findall(any_regex, main_info_dubler)
+                row_phone = re.findall(regex, main_info)
+                row_phone2 = re.findall(regex, main_info_dubler)
 
                 print('+++++++++++++++++++++++++')
                 print('-|-', main_info, '-||-', main_info_dubler, '-|||-')
                 print(f'row_phone {row_phone}', f'row_phone2 {row_phone2}')
-                print(f'row_phone {row_phone3}')# Дебаг инфо
+                # print(f'row_phone {row_phone3}')# Дебаг инфо
                 print('++++++++++++++++++++++++++')
-
 
                 if row_phone != []:
                     try:
-                        phone = ''.join(list(row_phone[0])).strip()
+                        phone = 'Не указан тел'
+                        for p in row_phone:
+                            if len(p) <= 10:
+                                continue
+                            elif len(p) >= 20 and ',' in p:
+                                continue
+                            else:
+                                phone = p.strip()
                     except Exception as e1:
                         print(f' e1 {e1}')
                         phone = 0
                 elif row_phone2 != []:
                     try:
-                        phone = ''.join(list(row_phone2[0])).strip()
+                        phone = 'Не указан тел'
+                        for p in row_phone2:
+                            if len(p) <= 10:
+                                continue
+                            elif len(p) >= 20 and ',' in p:
+                                continue
+                            else:
+                                phone = p.strip()
+
                     except Exception as e2:
-                            print(f' e2 {e2}')
-                            phone = 0
-                elif row_phone3 != []:
-                    try:
-                        phone = ''.join(list(row_phone3[0])).strip()
-                    except Exception as e3:
-                        print(f' e3 {e3}')
+                        print(f' e2 {e2}')
                         phone = 0
                 else:
                     phone = 'Не указан тел'
-
 
                 row_site = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info)
                 row_site2 = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info_dubler)
@@ -207,7 +211,7 @@ def get_html_site(list_urls):
 
 
 def main():
-    print(' v3.2.c.r stable')
+    print(' v4.w')
     print('Запуск.')
     try:
         get_html_site(run_browser(get_town_in_file(), get_categories_in_file()))
@@ -224,7 +228,6 @@ def main():
             print('main', e)
             browser.close()
             browser.quit()
-
 
 
 if __name__ == '__main__':

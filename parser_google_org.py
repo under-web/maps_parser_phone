@@ -116,8 +116,13 @@ def get_html_site(list_urls):
                 driver.get(row_url)
                 time.sleep(9)
             except Exception as e:
-                print(e)
-                continue
+                if 'about:neterror' in str(e):
+                    print('Проверьте интернет соединение')
+                    browser.close()
+                    browser.quit()
+                else:
+                    print('try get page', e)
+                    continue
             try:
                 main_info = driver.find_element_by_xpath(
                     '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[9]').text  # ищем элементы на страницы
@@ -129,9 +134,10 @@ def get_html_site(list_urls):
 
                 # TODO: не отображается потому что если номер main_info но regex не подходит он идет дальше, а твм []
                 # row_phone = re.findall(r'[0-9]\s\(\d{0,4}\)\s\d{0,4}\-\d{0,3}\-\d{0,3}', main_info)
-                amer_rus_regex = re.compile(r'\s\+\d.+')
-                only_rus_regex = re.compile(r'(\+7|8).*?(\d{3}).*?(\d{3}).*?(\d{2}).*?(\d{2})')
-                any_regex = re.compile(r'\+\d.+')
+                amer_rus_regex = re.compile(r'\+\d.+|8.+')
+                # only_rus_regex = re.compile(r'(\+7|8).*?(\d{3}).*?(\d{3}).*?(\d{2}).*?(\d{2})')
+                only_rus_regex = re.compile(r'\+\d.+|8.+')
+                any_regex = re.compile(r'\+\d.+|8.+')
 
                 row_phone = re.findall(amer_rus_regex, main_info)
                 row_phone2 = re.findall(only_rus_regex, main_info_dubler)
@@ -144,12 +150,24 @@ def get_html_site(list_urls):
                 print('++++++++++++++++++++++++++')
 
 
-                if row_phone:
-                    phone = ''.join(list(row_phone[0]))
-                elif row_phone2:
-                    phone = ''.join(list(row_phone[0]))
-                elif row_phone3:
-                    phone = ''.join(list(row_phone[0]))
+                if row_phone != []:
+                    try:
+                        phone = ''.join(list(row_phone[0])).strip()
+                    except Exception as e1:
+                        print(f' e1 {e1}')
+                        phone = 0
+                elif row_phone2 != []:
+                    try:
+                        phone = ''.join(list(row_phone2[0])).strip()
+                    except Exception as e2:
+                            print(f' e2 {e2}')
+                            phone = 0
+                elif row_phone3 != []:
+                    try:
+                        phone = ''.join(list(row_phone3[0])).strip()
+                    except Exception as e3:
+                        print(f' e3 {e3}')
+                        phone = 0
                 else:
                     phone = 'Не указан тел'
 
@@ -189,7 +207,7 @@ def get_html_site(list_urls):
 
 
 def main():
-    print(' v3c.r stable')
+    print(' v3.2.c.r stable')
     print('Запуск.')
     try:
         get_html_site(run_browser(get_town_in_file(), get_categories_in_file()))
@@ -198,7 +216,7 @@ def main():
         browser.close()
         browser.quit()
     except Exception as e:
-        if 'neterror' in str(e):
+        if 'about:neterror' in str(e):
             print('Проверьте интернет соединение')
             browser.close()
             browser.quit()

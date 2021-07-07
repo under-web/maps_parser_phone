@@ -84,9 +84,9 @@ def run_browser(town, categories):
                 browser.close()
                 browser.quit()
                 return list_urls
-        # browser.close()
-        # browser.quit()  # для дебага
-        # return list_urls
+        browser.close()
+        browser.quit()  # для дебага
+        return list_urls
 
 
 def save_in_csv(town, out_data):
@@ -100,14 +100,48 @@ def save_in_csv(town, out_data):
         file_writer.writerow(out_data)
 
 
+def filtred_list(row_phone):
+    """
+    Функция для фильтрации списка ищет среди элементов номер телефона
+    :param row_phone:
+    :return: возвращает номер телефона по критериям
+    """
+    phone = 'Не указан тел'
+    for p in row_phone:
+        if len(p) <= 10:
+            continue
+        elif len(p) >= 20 and ',' in p:
+            continue
+        else:
+            phone = p.strip()
+            return phone
+
+def print_info_console(name_org,main_info, main_info_dubler, phone, site):
+    """
+    Просто печать информации в консоль
+    :param name_org:
+    :param main_info:
+    :param main_info_dubler:
+    :param phone:
+    :param site:
+    :return:
+    """
+    print('------------------------------------------------')
+    print(f'Название " {name_org} "' + '\n')
+    print(main_info)
+    print(main_info_dubler)
+    print('tel', phone)
+    print('site  ', site)
+    print('------------------------------------------------')
+    print('')
+
 def get_html_site(list_urls):
     """
     Принимает список со всеми url, проходит по каждому адресу ищет данные и передает их в функцию записи
     :param list_urls: список с адресами
     :return:
     """
-
-    global phone
+    # global phone
     for row_url in list_urls:
         if 'http' in row_url:
             try:
@@ -135,67 +169,37 @@ def get_html_site(list_urls):
                 name_org = driver.find_element_by_xpath(
                     '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/h1/span[1]').text
 
-                regex = re.compile(r'\s\+\d.+|\s8.+')
+                regex = re.compile(r'\s\+\d.+|\s8.+')  # регулярное выражение
 
                 row_phone = re.findall(regex, main_info)
                 row_phone2 = re.findall(regex, main_info_dubler)
 
-                print('+++++++++++++++++++++++++')
-                print('-|-', main_info, '-||-', main_info_dubler, '-|||-')
-                print(f'row_phone {row_phone}', f'row_phone2 {row_phone2}')
-                # print(f'row_phone {row_phone3}')# Дебаг инфо
-                print('++++++++++++++++++++++++++')
+                # print('+++++++++++++++++++++++++')
+                # print('-|-', main_info, '-||-', main_info_dubler, '-|||-')  # Дебаг инфо
+                # print(f'row_phone {row_phone}', f'row_phone2 {row_phone2}')
+                # print('++++++++++++++++++++++++++')
 
-                if row_phone != []:
-                    try:
-                        phone = 'Не указан тел'
-                        for p in row_phone:
-                            if len(p) <= 10:
-                                continue
-                            elif len(p) >= 20 and ',' in p:
-                                continue
-                            else:
-                                phone = p.strip()
-                    except Exception as e1:
-                        print(f' e1 {e1}')
-                        phone = 0
-                elif row_phone2 != []:
-                    try:
-                        phone = 'Не указан тел'
-                        for p in row_phone2:
-                            if len(p) <= 10:
-                                continue
-                            elif len(p) >= 20 and ',' in p:
-                                continue
-                            else:
-                                phone = p.strip()
+                if row_phone:
+                    phone = filtred_list(row_phone)
 
-                    except Exception as e2:
-                        print(f' e2 {e2}')
-                        phone = 0
+                elif row_phone2:
+                    phone = filtred_list(row_phone2)
                 else:
                     phone = 'Не указан тел'
 
                 row_site = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info)
                 row_site2 = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info_dubler)
 
-                if row_site != []:
+                if row_site:
                     site = ''.join(row_site)  # блок для поиска сайта
-                elif row_site2 != []:
+                elif row_site2:
                     site = ''.join(row_site2)
                 else:
                     site = 'Не указан сайт'
 
-                print('------------------------------------------------')  # дебаг инфо
-                print(f'Название " {name_org} "' + '\n')
-                print(main_info)
-                print(main_info_dubler)
-                print('tel', phone)
-                print('site  ', site)
-                print('------------------------------------------------')
-                print('')
+                print_info_console(name_org, main_info, main_info_dubler, phone, site) # инфа в консоль
 
-                out_list = [name_org, phone, site]
+                out_list = [name_org, phone, site] # список для записи CSV
 
                 save_in_csv(get_town_in_file(), out_list)  # формируем список и передаем в ф-цию записи CSV
 

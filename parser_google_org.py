@@ -31,6 +31,7 @@ def get_categories_in_file():
 def run_browser(town, categories):
     """
     Функция для сбора всех ссылок по запросу категории и города
+
     :param town: город для поиска берёт из файла
     :param categories: категория поиска берёт из файла
     :return: list() список ссылок
@@ -84,9 +85,9 @@ def run_browser(town, categories):
                 browser.close()
                 browser.quit()
                 return list_urls
-        browser.close()
-        browser.quit()  # для дебага
-        return list_urls
+        # browser.close()
+        # browser.quit()  # для дебага
+        # return list_urls
 
 
 def save_in_csv(town, out_data):

@@ -44,8 +44,8 @@ def run_browser(town, categories):
     # browser = webdriver.Firefox()
 
     print('Подгружаю...')
-
-    base_url = 'https://www.google.com/maps/search/' + town + '+' + categories
+    # TODO: решить проблемы с геопозицией
+    base_url = 'https://www.google.com/maps/search/' + town + '+' + categories + '/@50.2719806,6.1876094,6z/data=!3m1!4b1'
     browser.get(base_url)
     time.sleep(7)
 
@@ -96,7 +96,7 @@ def save_in_csv(town, out_data):
     :param out_data: принимает список имя организации, телефон, сайт
     :return:
     """
-    with open(f"{town}.csv", mode="a", encoding='utf-8') as csv_file:
+    with open(f"{town}.csv", mode="a", encoding='utf-8', errors='ignore') as csv_file:
         file_writer = csv.writer(csv_file, delimiter=";")
         file_writer.writerow(out_data)
 
@@ -175,13 +175,8 @@ def get_html_site(list_urls):
                 row_phone = re.findall(regex, main_info)
                 row_phone2 = re.findall(regex, main_info_dubler)
 
-                # print('+++++++++++++++++++++++++')
-                # print('-|-', main_info, '-||-', main_info_dubler, '-|||-')  # Дебаг инфо
-                # print(f'row_phone {row_phone}', f'row_phone2 {row_phone2}')
-                # print('++++++++++++++++++++++++++')
-
                 if row_phone:
-                    phone = filtred_list(row_phone)
+                    phone = filtred_list(row_phone) # блок для поиска телефона
 
                 elif row_phone2:
                     phone = filtred_list(row_phone2)

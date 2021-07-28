@@ -221,7 +221,7 @@ def main():
     window = sg.Window('GoogleParsGUI', layout)
     while True:
         event, values = window.read()
-        if event == sg.WIN_CLOSED():
+        if event == sg.WIN_CLOSED:
             break
         elif event == 'START':
             window['out'].update()

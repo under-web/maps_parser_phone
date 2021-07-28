@@ -1,6 +1,7 @@
 import csv
 import re
 import time
+import PySimpleGUI as sg
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
@@ -8,24 +9,24 @@ from selenium.webdriver.common.keys import Keys
 list_urls = []
 
 
-def get_town_in_file():
-    """
-     Функция для извлечения города из файла
-    :return: строка с городом
-    """
-    with open('town.txt', 'r', encoding='utf-8') as file_town:
-        town = file_town.read()
-        return town.strip()
+# def get_town_in_file():
+#     """
+#      Функция для извлечения города из файла
+#     :return: строка с городом
+#     """
+#     with open('town.txt', 'r', encoding='utf-8') as file_town:
+#         town = file_town.read()
+#         return town.strip()
 
 
-def get_categories_in_file():
-    """
-    Функция для извлечения категории из файла
-    :return:  строка с категорией
-    """
-    with open('categories.txt', 'r', encoding='utf-8') as catg_town:
-        categories = catg_town.read()
-        return categories.strip()
+# def get_categories_in_file():
+#     """
+#     Функция для извлечения категории из файла
+#     :return:  строка с категорией
+#     """
+#     with open('categories.txt', 'r', encoding='utf-8') as catg_town:
+#         categories = catg_town.read()
+#         return categories.strip()
 
 
 def run_browser(town, categories):
@@ -117,7 +118,8 @@ def filtred_list(row_phone):
             phone = p.strip()
             return phone
 
-def print_info_console(name_org,main_info, main_info_dubler, phone, site):
+
+def print_info_console(name_org, main_info, main_info_dubler, phone, site):
     """
     Просто печать информации в консоль
     :param name_org:
@@ -136,7 +138,8 @@ def print_info_console(name_org,main_info, main_info_dubler, phone, site):
     print('------------------------------------------------')
     print('')
 
-def get_html_site(list_urls):
+
+def get_html_site(town, list_urls):
     """
     Принимает список со всеми url, проходит по каждому адресу ищет данные и передает их в функцию записи
     :param list_urls: список с адресами
@@ -176,7 +179,7 @@ def get_html_site(list_urls):
                 row_phone2 = re.findall(regex, main_info_dubler)
 
                 if row_phone:
-                    phone = filtred_list(row_phone) # блок для поиска телефона
+                    phone = filtred_list(row_phone)  # блок для поиска телефона
 
                 elif row_phone2:
                     phone = filtred_list(row_phone2)
@@ -193,11 +196,11 @@ def get_html_site(list_urls):
                 else:
                     site = 'Не указан сайт'
 
-                print_info_console(name_org, main_info, main_info_dubler, phone, site) # инфа в консоль
+                print_info_console(name_org, main_info, main_info_dubler, phone, site)  # инфа в консоль
 
-                out_list = [name_org, phone, site] # список для записи CSV
+                out_list = [name_org, phone, site]  # список для записи CSV
 
-                save_in_csv(get_town_in_file(), out_list)  # формируем список и передаем в ф-цию записи CSV
+                save_in_csv(town, out_list)  # формируем список и передаем в ф-цию записи CSV
 
                 driver.quit()
 
@@ -211,23 +214,43 @@ def get_html_site(list_urls):
 
 
 def main():
-    print(' v4.w')
-    print('Запуск.')
-    try:
-        get_html_site(run_browser(get_town_in_file(), get_categories_in_file()))
-
-    except KeyboardInterrupt:
-        browser.close()
-        browser.quit()
-    except Exception as e:
-        if 'about:neterror' in str(e):
-            print('Проверьте интернет соединение')
-            browser.close()
-            browser.quit()
-        else:
-            print('main', e)
-            browser.close()
-            browser.quit()
+    # TODO:Добавить многопоточность
+    layout = [[sg.Text('Введите город', size=(14, 1)), sg.Input(k='town')],
+              [sg.Text('Введите запрос', size=(14, 1)), sg.Input(k='keyw'), sg.Button('START')],
+              [sg.Text('Статус', size=(14, 20)), sg.Output(k='out')]]
+    window = sg.Window('GoogleParsGUI', layout)
+    while True:
+        event, values = window.read()
+        if event == sg.WIN_CLOSED():
+            break
+        elif event == 'START':
+            window['out'].update()
+            try:
+                get_html_site(values['town'], run_browser(values['town'], values['keyw']))
+            except Exception as e:
+                if 'about:neterror' in str(e):
+                    print('Проверьте интернет соединение')
+                    browser.close()
+                    browser.quit()
+                else:
+                    print('main', e)
+                    browser.close()
+                    browser.quit()
+    # try:
+    #     get_html_site(run_browser(get_town_in_file(), get_categories_in_file()))
+    #
+    # except KeyboardInterrupt:
+    #     browser.close()
+    #     browser.quit()
+    # except Exception as e:
+    #     if 'about:neterror' in str(e):
+    #         print('Проверьте интернет соединение')
+    #         browser.close()
+    #         browser.quit()
+    #     else:
+    #         print('main', e)
+    #         browser.close()
+    #         browser.quit()
 
 
 if __name__ == '__main__':

@@ -8,27 +8,6 @@ from selenium.webdriver.common.keys import Keys
 
 list_urls = []
 
-
-# def get_town_in_file():
-#     """
-#      Функция для извлечения города из файла
-#     :return: строка с городом
-#     """
-#     with open('town.txt', 'r', encoding='utf-8') as file_town:
-#         town = file_town.read()
-#         return town.strip()
-
-
-# def get_categories_in_file():
-#     """
-#     Функция для извлечения категории из файла
-#     :return:  строка с категорией
-#     """
-#     with open('categories.txt', 'r', encoding='utf-8') as catg_town:
-#         categories = catg_town.read()
-#         return categories.strip()
-
-
 def run_browser(town, categories):
     """
     Функция для сбора всех ссылок по запросу категории и города
@@ -86,9 +65,9 @@ def run_browser(town, categories):
                 browser.close()
                 browser.quit()
                 return list_urls
-        # browser.close()
-        # browser.quit()  # для дебага
-        # return list_urls
+        browser.close()
+        browser.quit()  # для дебага
+        return list_urls
 
 
 def save_in_csv(town, out_data):
@@ -236,21 +215,6 @@ def main():
                     print('main', e)
                     browser.close()
                     browser.quit()
-    # try:
-    #     get_html_site(run_browser(get_town_in_file(), get_categories_in_file()))
-    #
-    # except KeyboardInterrupt:
-    #     browser.close()
-    #     browser.quit()
-    # except Exception as e:
-    #     if 'about:neterror' in str(e):
-    #         print('Проверьте интернет соединение')
-    #         browser.close()
-    #         browser.quit()
-    #     else:
-    #         print('main', e)
-    #         browser.close()
-    #         browser.quit()
 
 
 if __name__ == '__main__':

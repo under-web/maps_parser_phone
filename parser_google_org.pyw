@@ -21,8 +21,8 @@ def run_browser(town, categories):
     opts = Options()
     opts.headless = True
     assert opts.headless
-    # browser = webdriver.Firefox(options=opts)
-    browser = webdriver.Firefox()
+    browser = webdriver.Firefox(options=opts)
+    # browser = webdriver.Firefox()
 
     print('Подгружаю...')
 
@@ -66,15 +66,15 @@ def run_browser(town, categories):
                 browser.close()
                 browser.quit()
                 return list_urls
-        # browser.close()
-        # browser.quit()  # для дебага
-        # return list_urls
+        browser.close()
+        browser.quit()  # для дебага
+        return list_urls
 
 
 def save_in_csv(town, out_data):
     """
     Функция для записи списка в файл CSV
-    :param out_data: принимает список имя организации, телефон, сайт
+    :param out_data: принимает список имя организации, организацию, телефон, сайт
     :return:
     """
     with open(f"{town}.csv", mode="a", encoding='utf-8', errors='ignore') as csv_file:
@@ -99,7 +99,7 @@ def filtred_list(row_phone):
             return phone
 
 
-def print_info_console(name_org, main_info, main_info_dubler, phone, site):
+def print_info_console(name_org, main_info, main_info_dubler, phone, site, categories):
     """
     Просто печать информации в консоль
     :param name_org:
@@ -109,10 +109,13 @@ def print_info_console(name_org, main_info, main_info_dubler, phone, site):
     :param site:
     :return:
     """
+    print('')
     print('------------------------------------------------')
     print(f'Название " {name_org} "' + '\n')
-    print(main_info)
-    print(main_info_dubler)
+    print(f'Категория {categories}')
+    # print(f'Код города {code_town}')
+    # print(main_info)
+    # print(main_info_dubler)
     print('tel', phone)
     print('site  ', site)
     print('------------------------------------------------')
@@ -126,14 +129,15 @@ def get_html_site(town, list_urls):
     :return:
     """
     # global phone
+# TODO: очистить список от неправильных записей
     for row_url in list_urls:
         if 'http' in row_url:
             try:
                 opts = Options()
                 opts.headless = True
                 assert opts.headless
-                # driver = webdriver.Firefox(options=opts)  # загружаем браузер
-                driver = webdriver.Firefox()
+                driver = webdriver.Firefox(options=opts)  # загружаем браузер
+                # driver = webdriver.Firefox()
                 driver.get(row_url)
                 time.sleep(9)
             except Exception as e:
@@ -147,43 +151,66 @@ def get_html_site(town, list_urls):
             try:
                 main_info = driver.find_element_by_xpath(
                     '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[9]').text  # ищем элементы на страницы
-
+            except Exception as e:
+                if 'Unable to locate' in e:
+                    print('Готово')
+                    break
+                else:
+                    print('err in main_info ', e)
+            try:
                 main_info_dubler = driver.find_element_by_xpath(
                     '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[7]').text
+
+                categories = driver.find_element_by_xpath('/html/body/jsl/div[3]/div[9]/div[8]/div/div['
+                                                          '1]/div/div/div[2]/div[1]/div[1]/div[2]/div/div[2]/span['
+                                                          '1]/span[1]/button').text
                 name_org = driver.find_element_by_xpath(
                     '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/h1/span[1]').text
 
-                regex = re.compile(r'\s\+\d.+|\s8.+')  # регулярное выражение
+                if str(town) in main_info or main_info_dubler: # проверяем выходит ли поиск в границы региона
 
-                row_phone = re.findall(regex, main_info)
-                row_phone2 = re.findall(regex, main_info_dubler)
+                    regex = re.compile(r'\s\+\d.+|\s8.+')  # регулярное выражение телефона
 
-                if row_phone:
-                    phone = filtred_list(row_phone)  # блок для поиска телефона
+                    row_phone = re.findall(regex, main_info)
+                    row_phone2 = re.findall(regex, main_info_dubler)
 
-                elif row_phone2:
-                    phone = filtred_list(row_phone2)
+                    if row_phone:
+                        phone = filtred_list(row_phone)  # блок для поиска телефона
+
+                    elif row_phone2:
+                        phone = filtred_list(row_phone2)
+
+                    else:
+                        phone = 'Не указан тел'
+
+                    row_site = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info)
+                    row_site2 = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info_dubler)
+
+                    if row_site:
+                        site = ''.join(row_site)  # блок для поиска сайта
+                    elif row_site2:
+                        site = ''.join(row_site2)
+                    else:
+                        site = 'Не указан сайт'
+
+                    print_info_console(name_org,
+                                       main_info,
+                                       main_info_dubler,
+                                       phone,
+                                       site,
+                                       categories)  # инфа в консоль
+
+                    out_list = [name_org,
+                                categories,
+                                phone,
+                                site]  # список для записи CSV
+
+                    save_in_csv(town, out_list)  # формируем список и передаем в ф-цию записи CSV
+
+                    driver.quit()
                 else:
-                    phone = 'Не указан тел'
-
-                row_site = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info)
-                row_site2 = re.findall(r'.+\.[a-zA-Z]{2,4}', main_info_dubler)
-
-                if row_site:
-                    site = ''.join(row_site)  # блок для поиска сайта
-                elif row_site2:
-                    site = ''.join(row_site2)
-                else:
-                    site = 'Не указан сайт'
-
-                print_info_console(name_org, main_info, main_info_dubler, phone, site)  # инфа в консоль
-
-                out_list = [name_org, phone, site]  # список для записи CSV
-
-                save_in_csv(town, out_list)  # формируем список и передаем в ф-цию записи CSV
-
-                driver.quit()
-
+                    print('drop')
+                    continue
             except Exception as e:
                 print('get_html_site err:', e)
                 driver.close()
@@ -194,7 +221,6 @@ def get_html_site(town, list_urls):
 
 
 def main():
-    # TODO:Добавить многопоточность
     layout = [[sg.Text('Введите город', size=(14, 1)), sg.Input(k='town')],
               [sg.Text('Введите запрос', size=(14, 1)), sg.Input(k='keyw'), sg.Button('START')],
               [sg.Text('Статус', size=(14, 20)), sg.Output(k='out')]]

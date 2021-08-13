@@ -6,7 +6,8 @@
 
 Должет быть установлен на компьютере Firefox!
 
-Работет пока для 64х-разрядных систем.
+Работает для 64х-разрядных систем. Для 32-х битных качаем [здесь] (https://github.com/mozilla/geckodriver/releases) geckodriver
+удаляем исходный вставляем в папку с проектом который скачали.
 
 ```
 pip install -r requirements.txt
@@ -18,5 +19,5 @@ pip install -r requirements.txt
 python parser_google_org.py
 ```
 ### Примечание
-
-> Может выдавать некоррекную геопозицию если парсить зарубеж, Россия и СНГ показывает стабильный парсинг. Если у вас 32-разрядная система скачайте 32-рязрядный [geckodriver.exe](https://github.com/mozilla/geckodriver/releases)
+Решение с консолью от geckodriver
+[id]: O:\Desktop\Снимок "Необязательная подсказка"

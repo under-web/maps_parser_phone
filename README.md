@@ -20,4 +20,5 @@ python parser_google_org.py
 ```
 ### Примечание
 Решение с консолью от geckodriver
-[id]: O:\Desktop\Снимок "Необязательная подсказка"
+![Альтернативный текст](https://cloud.mail.ru/public/cA5Y/72J3tegcG)
+https://cloud.mail.ru/public/cA5Y/72J3tegcG

@@ -5,7 +5,8 @@ import PySimpleGUI as sg
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
-
+# TODO: сохранение в таблицу  категории товара
+# TODO: остановить процесс если код не совпадает с ключевым запросом города страны
 list_urls = []
 
 def run_browser(town, categories):
@@ -20,11 +21,11 @@ def run_browser(town, categories):
     opts = Options()
     opts.headless = True
     assert opts.headless
-    browser = webdriver.Firefox(options=opts)
-    # browser = webdriver.Firefox()
+    # browser = webdriver.Firefox(options=opts)
+    browser = webdriver.Firefox()
 
     print('Подгружаю...')
-    # TODO: решить проблемы с геопозицией
+
     base_url = 'https://www.google.com/maps/search/' + town + '+' + categories + '/@50.2719806,6.1876094,6z/data=!3m1!4b1'
     browser.get(base_url)
     time.sleep(7)
@@ -65,9 +66,9 @@ def run_browser(town, categories):
                 browser.close()
                 browser.quit()
                 return list_urls
-        browser.close()
-        browser.quit()  # для дебага
-        return list_urls
+        # browser.close()
+        # browser.quit()  # для дебага
+        # return list_urls
 
 
 def save_in_csv(town, out_data):
@@ -131,8 +132,8 @@ def get_html_site(town, list_urls):
                 opts = Options()
                 opts.headless = True
                 assert opts.headless
-                driver = webdriver.Firefox(options=opts)  # загружаем браузер
-                # driver = webdriver.Firefox()
+                # driver = webdriver.Firefox(options=opts)  # загружаем браузер
+                driver = webdriver.Firefox()
                 driver.get(row_url)
                 time.sleep(9)
             except Exception as e:

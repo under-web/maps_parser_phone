@@ -6,7 +6,7 @@
 
 Должет быть установлен на компьютере Firefox!
 
-Работает для 64х-разрядных систем. Для 32-х битных качаем [здесь][https://github.com/mozilla/geckodriver/releases] geckodriver
+Работает для 64х-разрядных систем. Для 32-х битных качаем (здесь)[https://github.com/mozilla/geckodriver/releases] geckodriver
 удаляем исходный вставляем в папку с проектом который скачали.
 
 ```

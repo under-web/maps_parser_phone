@@ -25,7 +25,7 @@ python parser_google_org.py
 ![Альтернативный текст](https://github.com/under-web/maps_parser_phone/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.PNG)
 
 
-Так же перед компиляцией в exe через pyinstaller помогло решение с изменением selenium в (venv) lib
+*Так же перед компиляцией в exe через pyinstaller помогло решение с изменением selenium в (venv) lib*
 
 
 ![Альтернативный текст](https://github.com/under-web/maps_parser_phone/blob/main/selenium.PNG)

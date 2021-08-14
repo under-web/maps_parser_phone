@@ -5,8 +5,7 @@ import PySimpleGUI as sg
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
-# TODO: сохранение в таблицу  категории товара
-# TODO: остановить процесс если код не совпадает с ключевым запросом города страны
+
 list_urls = []
 
 def run_browser(town, categories):
@@ -66,9 +65,9 @@ def run_browser(town, categories):
                 browser.close()
                 browser.quit()
                 return list_urls
-        browser.close()
-        browser.quit()  # для дебага
-        return list_urls
+        # browser.close()
+        # browser.quit()  # для дебага раскоментить
+        # return list_urls
 
 
 def save_in_csv(town, out_data):

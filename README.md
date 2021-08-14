@@ -22,7 +22,7 @@ python parser_google_org.py
 Решение для скрытия консоли  geckodriver.exe
 \ AppData \ Roaming \ Python \ Python38 \ site-packages \ selenium \ webdriver \ common \ service.py
 
-![Альтернативный текст](https://github.com/under-web/maps_parser_phone/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.PNG)
+![Альтернативный текст](https://github.com/under-web/maps_parser_phone/blob/main/selenium_in_venv.PNG)
 
 
 *Так же перед компиляцией в exe через pyinstaller помогло решение с изменением selenium в (venv) lib*

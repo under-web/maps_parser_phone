@@ -129,6 +129,7 @@ def get_html_site(town, list_urls):
     """
     # global phone
 # TODO: очистить список от неправильных записей
+    global main_info
     for row_url in list_urls:
         if 'http' in row_url:
             try:

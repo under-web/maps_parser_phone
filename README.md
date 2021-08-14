@@ -19,6 +19,8 @@ pip install -r requirements.txt
 python parser_google_org.py
 ```
 ### Примечание
-Решение с консолью от geckodriver
+Решение для скрытия консоли  geckodriver.exe
+\ AppData \ Roaming \ Python \ Python38 \ site-packages \ selenium \ webdriver \ common \ service.py
+
 ![Альтернативный текст](https://github.com/under-web/maps_parser_phone/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.PNG)
 

@@ -147,6 +147,8 @@ def get_html_site(town, list_urls):
                     browser.quit()
                 else:
                     print('try get page', e)
+                    browser.close()
+                    browser.quit()
                     continue
             try:
                 main_info = driver.find_element_by_xpath(
@@ -209,7 +211,9 @@ def get_html_site(town, list_urls):
 
                     driver.quit()
                 else:
-                    print('drop')
+                    print('пропускаю, запрос не из вашего региона..')
+                    driver.close()
+                    driver.quit()
                     continue
             except Exception as e:
                 print('get_html_site err:', e)

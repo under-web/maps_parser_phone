@@ -8,6 +8,7 @@ from selenium.webdriver.common.keys import Keys
 
 list_urls = []
 
+#TODO: переписать вызов урл не через открытие браузера а через новые вкладки
 def run_browser(town, categories):
     """
     Функция для сбора всех ссылок по запросу категории и города
@@ -128,7 +129,7 @@ def get_html_site(town, list_urls):
     :return:
     """
     # global phone
-# TODO: очистить список от неправильных записей
+    # TODO: очистить список от неправильных записей
     global main_info
     for row_url in list_urls:
         if 'http' in row_url:
@@ -169,7 +170,7 @@ def get_html_site(town, list_urls):
                 name_org = driver.find_element_by_xpath(
                     '/html/body/jsl/div[3]/div[9]/div[8]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/h1/span[1]').text
 
-                if str(town) in main_info or main_info_dubler: # проверяем выходит ли поиск в границы региона
+                if str(town) in main_info or main_info_dubler:  # проверяем выходит ли поиск в границы региона
 
                     regex = re.compile(r'\s\+\d.+|\s8.+')  # регулярное выражение телефона
 

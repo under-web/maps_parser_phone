@@ -7,7 +7,7 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 
 list_urls = []
-
+#TODO: переписать функцию обработки урл
 #TODO: переписать вызов урл не через открытие браузера а через новые вкладки
 def run_browser(town, categories):
     """
